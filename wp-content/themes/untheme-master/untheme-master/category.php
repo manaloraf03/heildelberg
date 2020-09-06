@@ -1,0 +1,32 @@
+<?php
+/**
+ * Category Template : Banner Template
+ */
+
+get_header();
+?>
+
+<main id="main" class="site-main" role="main">
+<div class="container">
+	<h3 class="mt-3">Categories Archive Page</h3>
+</div>
+<?php
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+		get_template_part( 'template-parts/blog', get_post_type() );
+
+	endwhile;
+
+	?> 
+
+	<div class="container">
+		<?php  echo bootstrap_pagination(); ?>
+	</div>
+<?php endif;
+?>
+
+</main>
+
+<?php
+get_sidebar();
+get_footer();

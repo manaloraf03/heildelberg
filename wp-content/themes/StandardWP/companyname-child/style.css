@@ -1,0 +1,28 @@
+/*
+Theme Name: Company Name Theme Child
+Text Domain:  companyname-child
+Template: companyname
+Author: Michael Dharen M. Bernardo
+Description: A Custom Wordpress Theme for Company Name
+Version: 1.0
+*/
+
+/*
+NOTES:
+======
+
+(1.) You can't put your styles in this file (style.css). Put them in css/companyname-child.css
+
+(3.) Since downloads of Company Name from GitHub will be in a folder named 'companyname', therefore in the CSS comment header above I have put 'Template: companyname'. If the Company Name root folder has a different name, then you must make the SAME change to the Template line in the CSS comment above.
+
+(3.) You can make this child theme your own by simply:
+
+(a.) Change the name of the root folder
+(b.) Change the name of the stylesheet css/companyname-child.css
+(c.) In functions.php, do a search-and-replace for these two terms:
+
+        "companyname-child" => "yourtheme-name"
+        "companyname_child" => "yourtheme_name"
+
+(d.) Change the Theme Name in the CSS comment in this file (style.css)
+*/

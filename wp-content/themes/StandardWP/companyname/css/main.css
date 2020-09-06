@@ -1,0 +1,682 @@
+/*Fonts*/
+
+/*Fonts*/
+
+/*Global*/
+body {
+	text-transform: capitalize;
+	overflow-x: hidden;
+}
+.home .section {
+    padding: 0px;
+}
+.section {
+	padding: 50px 0px;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+
+/*Button & Links*/
+a:focus,
+a {
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	color: ;
+	text-decoration: none;
+	outline: none;
+}
+.btn-primary:active:hover,
+.btn-primary:active:focus,
+.btn-primary:focus,
+.btn-primary {
+	white-space: normal;
+	outline: none;
+}
+.btn-secondary:active:hover,
+.btn-secondary:active:focus,
+.btn-secondary:focus,
+.btn-secondary {
+	white-space: normal;
+	outline: none;
+}
+.btn-primary:hover {
+	transition: all 0.5s;
+}
+.btn-secondary:hover {
+	transition: all 0.5s;
+}
+/*Button & Links*/
+
+/*Others*/
+.no-gutter > [class*='col-'] {
+	padding-right:0;
+	padding-left:0;
+}
+h4,
+h5,
+h6 {
+	margin: 5px 0px;
+	line-height: 25px;
+}
+h1,
+h2,
+h3{
+	margin: 5px 0px;
+}
+.divider {
+	padding: 30px 0px;
+}
+.space {
+	padding: 10px 0px;
+}
+p {
+	font-size: 16px;
+}
+.disable {
+    display: none;
+}
+/*Others*/
+
+/*Global*/
+
+/*Navigation*/
+a.navbar-brand {
+	height: auto;
+	padding: 0px;
+}
+.navbar {
+    background-color: transparent;
+    background-image: none;
+    min-height: initial;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    margin: 0px;
+}
+nav.navbar h1 {
+	margin: 0px;
+}
+.home header {
+    display: none;
+}
+/*Navigation*/
+
+/*Body #*/
+.body-0 { 
+	background: url(../photos/-bg-0.png) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/*Body #*/
+
+/*Page*/
+section#pageheader {
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    text-align: center;
+    padding-top: 115px;
+    height: 240px;
+    color: white;
+}
+section#pageheader h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+/*Page*/
+
+/*Shop*/
+.single-product.woocommerce .wc-archive-title,
+.archive.woocommerce .wc-product-title {
+    display: none;
+}
+/*Shop*/
+
+ /*=============================================================================================================================================================
+																	480 Media Queries
+==============================================================================================================================================================*/
+
+@media screen and (max-width: 479px) {
+.visible-exs {
+	display: block !important;
+}
+.hidden-exs {
+	display: none !important;
+}
+.centerexs {
+	text-align: center !important;
+}
+}
+
+/*==============================================================================================================================================================
+																	767 Media Queries
+==============================================================================================================================================================*/
+
+@media (max-width: 767px) {
+.visible-exs {
+	display: none;
+}
+.left, .right {
+	text-align: center;
+}
+.centerxs {
+	text-align: center !important;
+}
+.navbar.navbar-default div.navbar-offcanvas {
+	box-shadow: 0px 0px 20px 5px black;
+	background-color: rgba(0,0,0,0.9);
+	overflow: hidden;
+}
+.navbar.navbar-default .navbar-toggle {
+	background-color: #;
+	border: 2px solid #;
+	transition: all 0.5s;
+}
+.navbar.navbar-default .navbar-toggle:hover,
+.navbar.navbar-default .navbar-toggle:focus {
+	background-color: #;
+	border: 2px solid #;
+	transition: all 0.5s;
+}
+.navbar.navbar-default .navbar-toggle .icon-bar {
+	background-color: #;
+	transition: all 0.5s;
+}
+.navbar.navbar-default .navbar-toggle:focus .icon-bar,
+.navbar.navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: #;
+	transition: all 0.5s;
+}
+.navbar.navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu {
+	background-color: transparent;
+}
+.navbar.navbar-default ul.navbar-nav li.dropdown.active ul.dropdown-menu li a:hover,
+.navbar.navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu li a:hover,
+.navbar.navbar-default ul.navbar-nav li a:hover {
+	color: white;
+}
+.navbar.navbar-default ul.navbar-nav li a:focus,
+.navbar.navbar-default ul.navbar-nav li a {
+	background-color: transparent;
+	background-image: none;
+	color: darkgray;
+}
+.navbar.navbar-default ul.navbar-nav li.dropdown.active ul.dropdown-menu li a:focus,
+.navbar.navbar-default ul.navbar-nav li.dropdown.active ul.dropdown-menu li a,
+.navbar.navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu li a:focus,
+.navbar.navbar-default ul.navbar-nav li.dropdown.open ul.dropdown-menu li a {
+	font-weight: normal;
+	color: darkgray;
+}
+.navbar.navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu li.active a:hover,
+.navbar.navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu li.active a:focus,
+.navbar.navbar-default ul.navbar-nav li.dropdown ul.dropdown-menu li.active a,
+.navbar.navbar-default ul.navbar-nav li.dropdown.open a.dropdown-toggle,
+.navbar.navbar-default ul.navbar-nav li.active a:hover,
+.navbar.navbar-default ul.navbar-nav li.active a:focus,
+.navbar.navbar-default ul.navbar-nav li.active a {
+	background-color: transparent;
+	background-image: none;
+	font-weight: bold;
+	color: white;
+}
+}
+
+/*==============================================================================================================================================================
+																	768 Media Queries
+==============================================================================================================================================================*/
+
+@media (min-width: 768px) { 
+.visible-exs {
+	display: none;
+}
+.dropdown.mega-menu {
+	position: relative;
+}
+.mega-menu .dropdown-menu {
+	right: inherit;
+}
+}
+
+/*==============================================================================================================================================================
+																	768x991 Media Queries
+==============================================================================================================================================================*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*==============================================================================================================================================================
+																	992x1199Media Queries
+==============================================================================================================================================================*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}	
+
+/*==============================================================================================================================================================
+																	1200 Media Queries
+==============================================================================================================================================================*/
+
+@media (min-width: 1200px) {
+
+}
+
+/*==============================================================================================================================================================
+																	End of Media Queries
+==============================================================================================================================================================*/
+
+/*
+HOVERNAV
+========
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
+This works only for screen sizes larger than phones.
+
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/ultrathemes.js
+*/
+@media (min-width: 768px) {
+  .navbar-nav .open ul {
+    display: none
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background: none
+  }
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #969696;
+    background: none
+  }
+  .navbar-nav .hovernav:hover > .dropdown-menu {
+    display: block
+  }
+}
+
+/*
+MEGANAV
+=======
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar: on screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
+
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/ultrathemes.js
+*/
+.mega-menu ul a {
+	color: #666;
+}
+.mega-menu > ul > li > a {
+	font-weight: bold !important
+}
+@media (max-width: 767px) {
+	.has-children ul {
+		display: block !important;
+		margin-left: 15px
+	}
+}
+@media (min-width: 768px) {
+	.dropdown.mega-menu {
+		position: static;
+	}
+	.mega-menu > .dropdown-menu {
+		left: 0;
+		right: 0;
+		overflow-x: auto
+	}
+	.mega-menu > ul > li {
+	  display:table-cell;
+	}
+	.mega-menu > ul ul {
+		position: relative;
+		display: block !important;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 0
+	}
+	.dropdown-menu li {
+		border-right: 1px solid #e7e7e7
+	}
+    .dropdown-menu li li,
+    .dropdown-menu li:last-of-type {
+        border-right: 0
+    }
+}
+
+
+/*
+Max content widths
+*/
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto
+}
+
+/*
+Site Title
+==========
+If you require a Site title and a logo, an example of how to do this is provided below (use your own logo):
+
+#site-title a {
+    display: inline-block;
+	padding-left 60px;
+    background: url(../img/logo.png) 0 0 no-repeat;
+}
+*/
+
+/*
+Main content
+*/
+
+/*#content article {
+  margin-bottom: 40px
+}
+#content header {
+  margin: 20px 0
+}
+#content section {
+  margin-bottom: 20px
+}
+#content footer {
+  padding-bottom: 20px
+}*/
+
+/*
+Sidebar
+*/
+
+.sidebar ul,
+.sidebar ol {
+  list-style-type: none;
+  padding: 0
+}
+.sidebar li {
+  margin: 10px 0
+}
+
+/*
+Hide form placeholders on focus
+*/
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus::-webkit-input-placeholder { color: transparent; }
+textarea:focus:-moz-placeholder { color: transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color: transparent; } /* FF 19+ */
+
+/*
+Site footer
+*/
+
+.site-footer ul,
+.site-footer ol {
+  list-style-type: none;
+  padding: 0
+}
+.site-footer li {
+  margin: 10px 0
+}
+.site-sub-footer p {
+  text-align: center
+}
+
+.site-footer p {
+  text-align: center
+}
+
+/*
+Commentlist
+*/
+
+ol.commentlist {
+	counter-reset: li; /* Initiate a counter */
+	padding: 0
+}
+ol.commentlist ul {
+    padding: 0
+}
+ol.commentlist > li {
+	position: relative;
+	margin: 0 0 20px 0;
+	list-style: none /* Disable the normal item numbering */
+}
+ol.commentlist > li:before {
+    content: "Thread " counter(li); /* Use the counter as content */
+    counter-increment: li; /* Increment the counter by 1 */
+    position:absolute;  
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom-left-radius: 4px;
+    padding: 5px 20px 5px 10px;
+    color: #999
+}
+ol.commentlist li ol,
+ol.commentlist li ul {
+    list-style-type: none;
+    margin: 0
+}
+
+.commentlist li li {
+    background: #f8f8f8;
+}
+.commentlist li li li {
+    background: #fff
+}
+.commentlist li li li li {
+    background: #f8f8f8
+}
+.commentlist li li li li li li {
+    background: #fff
+}
+.commentlist li {
+    padding: 20px
+}
+.commentlist ul li {
+    margin-top: 20px;
+    margin-bottom: 0
+}
+.reply p {
+    margin: 0
+}
+
+/*
+WOOCOMMERCE - re-styling to match Bootstrap
+===========================================
+If you don't want this to use the WooCommerce plugin, or if you don't want these styles below, then delete this entire segment of the CSS and delete the corresponding segment of ultrathemes.js
+
+Notice that some of the styles below are for compatibility with Bootstrap Theme. If you are not using Bootstrap Theme, then delete those portions below.
+*/
+
+.woocommerce a:focus {
+  outline: none
+}
+.woocommerce .count {
+  background: inherit
+}
+.woocommerce .added_to_cart {
+  display: block !important
+}
+.woocommerce .woocommerce-error:before,
+.woocommerce .woocommerce-info:before,
+.woocommerce .woocommerce-message:before,
+.woocommerce-page .woocommerce-error:before,
+.woocommerce-page .woocommerce-info:before,
+.woocommerce-page .woocommerce-message:before {
+  padding-top: 0
+}
+.woocommerce #content input.button, 
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button, 
+.woocommerce-page #content input.button, 
+.woocommerce-page #respond input#submit, 
+.woocommerce-page a.button, 
+.woocommerce-page button.button, 
+.woocommerce-page input.button {
+	/* .btn */
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	/* .btn-primary */
+	color: #FFF;
+	background: #337AB7;
+	border-color: #2E6DA4;
+	/* BOOTSTRAP THEME .btn-primary */
+	background-image: linear-gradient(to bottom, #337AB7 0px, #265A88 100%);
+	background-repeat: repeat-x;
+	border-color: #245580;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 1px rgba(0, 0, 0, 0.075);
+	/* Extra fixes */ 
+	text-shadow: none;
+	/* box-shadow: none; */
+	/* Un-comment the line above if you are not using the BOOTSTRAP THEME. */
+}
+.woocommerce #content input.button:hover, 
+.woocommerce #respond input#submit:hover, 
+.woocommerce a.button:hover, 
+.woocommerce button.button:hover, 
+.woocommerce input.button:hover, 
+.woocommerce-page #content input.button:hover, 
+.woocommerce-page #respond input#submit:hover, 
+.woocommerce-page a.button:hover, 
+.woocommerce-page button.button:hover, 
+.woocommerce-page input.button:hover {
+	/* .btn-primary:hover */
+	color: #FFF;
+	background: #286090;
+	border-color: #204D74;
+	/* BOOTSTRAP THEME .btn-primary:hover */
+	background-color: #265A88;
+	background-position: 0px -15px;
+}
+.woocommerce #content input.button.alt, 
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt, 
+.woocommerce-page #content input.button.alt, 
+.woocommerce-page #respond input#submit.alt, 
+.woocommerce-page a.button.alt, 
+.woocommerce-page button.button.alt, 
+.woocommerce-page input.button.alt {
+	/* .btn */
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	/* .btn-success */
+	color: #FFF;
+	background-color: #5CB85C;
+	border-color: #4CAE4C;
+	/* BOOTSTRAP THEME .btn-success */
+	background-image: linear-gradient(to bottom, #5CB85C 0px, #419641 100%);
+	background-repeat: repeat-x;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 1px rgba(0, 0, 0, 0.075);
+	/* Extra fixes */
+	text-shadow: none;
+	/* box-shadow: none; */
+	/* Un-comment the line above if you are NOT using the BOOTSTRAP THEME. */
+}
+.woocommerce #content input.button.alt:hover, 
+.woocommerce #respond input#submit.alt:hover, 
+.woocommerce a.button.alt:hover, 
+.woocommerce button.button.alt:hover, 
+.woocommerce input.button.alt:hover, 
+.woocommerce-page #content input.button.alt:hover, 
+.woocommerce-page #respond input#submit.alt:hover, 
+.woocommerce-page a.button.alt:hover, 
+.woocommerce-page button.button.alt:hover, 
+.woocommerce-page input.button.alt:hover {
+	/* Extras fixes */
+	background: none;
+	text-shadow: none;
+	/* .btn-success:hover */
+	color: #FFF;
+	background-color: #449D44;
+	border-color: #398439;
+	/* BOOTSTRAP THEME .btn-success:hover */
+	background-color: #419641;
+	background-position: 0px -15px;
+}
+
+
+.woocommerce .woocommerce-error,
+.woocommerce-page .woocommerce-error {
+	/* Extra fixes */
+	padding: 0;
+	margin: 0;
+	position: relative;
+	border-top: none;
+	background: none;
+	text-shadow: none;
+	list-style: outside none none !important;
+	width: auto;
+	/* box-shadow: none; */
+	/* Un-comment the line above if you are NOT using the BOOTSTRAP THEME. */
+	/* .alert */
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	/* .alert-danger */
+	color: #A94442;
+	background-color: #F2DEDE;
+	border-color: #EBCCD1;
+	/* BOOTSTRAP THEME .alert */
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25) inset, 0px 1px 2px rgba(0, 0, 0, 0.05);
+	/* BOOTSTRAP THEME .alert */
+	background-image: linear-gradient(to bottom, #F2DEDE 0px, #E7C3C3 100%);
+	background-repeat: repeat-x;
+	border-color: #DCA7A7;
+}
+.woocommerce .woocommerce-error:after, 
+.woocommerce .woocommerce-error:before, 
+.woocommerce-page .woocommerce-error:after, 
+.woocommerce-page .woocommerce-error:before {
+	display: none;
+}
