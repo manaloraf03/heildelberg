@@ -38,6 +38,50 @@ add_action( 'init', 'untheme_nav_init' );
  * Register widget area.
  *
  */
+
+function untheme_custom_products_type(){
+	$labels = array(
+		'name' => 'Products',
+		'singular_name' => 'Product',
+		'add_new' => 'Add Product Work',
+		'all_items' => 'All Products',
+		'add_new_item' => 'Add Product',
+		'edit_item' => 'Edit Product',
+		'new_item' => 'New Product',
+		'view_item' => 'View Product',
+		'search_item' => 'Search Product',
+		'not_found' => 'No Products Found',
+		'not_found_in_trash' => 'No Product Found in Trash',
+		'parent_item_colon' => 'Parent Item'
+		);
+
+	$args = array(
+		'labels'=> $labels,
+		'public'=> true,
+		'has_archive'=> true,
+		'publicly_queryable' => true,
+		'query_var'=> true,
+		'query_var'=> true,
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'excerpt',
+			'thumbnail',
+			'revisions',
+		),
+		'taxonomies' =>array('category', 'post_tag'),
+		'menu_position' => 5,
+		'exclude_from_search' => false,
+		);
+
+	register_post_type('products', $args );
+}
+add_action( 'init', 'untheme_custom_products_type' );
+
+
 function untheme_widget_navbar() {
 	register_sidebar( array(
 		'name'          => 'Navigation Bar Widget',
@@ -218,4 +262,25 @@ function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true, $params
 
     return null;
 }
+
+function products_posts_per_page( $query ) {
+    if ( $query->query_vars['post_type'] == 'products' ) $query->query_vars['posts_per_page'] = 1;
+    return $query;
+}
+if ( !is_admin() ) add_filter( 'pre_get_posts', 'products_posts_per_page' );
+
+
+function post_category_posts_per_page( $query ) {
+    if ( $query->is_main_query() && ! $query->is_feed() && ! is_admin() && is_category() ) $query->query_vars['posts_per_page'] = 2;
+    return $query;
+}
+if ( !is_admin() ) add_filter( 'pre_get_posts', 'post_category_posts_per_page' );
+
+
+function post_tags_posts_per_page( $query ) {
+    if ( $query->is_main_query() && ! $query->is_feed() && ! is_admin() && is_tag() ) $query->query_vars['posts_per_page'] = 3;
+    return $query;
+}
+if ( !is_admin() ) add_filter( 'pre_get_posts', 'post_tags_posts_per_page' );
+
 
