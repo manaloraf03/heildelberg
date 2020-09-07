@@ -76,7 +76,7 @@
 								wp_nav_menu( array(
 									'theme_location' => 'menu-2',
 									'menu_id'        => 'primary-menu',
-									'menu_class' => 'nav navbar-nav navbar-right',
+									'menu_class' => 'nav navbar-nav navbar-right navbar-right',
 									'items-wrap' => ' <ul>%3$s</ul>' 
 								) );
 							?>
